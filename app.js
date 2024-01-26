@@ -34,8 +34,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
         allowed_countries: ["US", "CA", "GB", "AU", "IN"], // Specify allowed non-Indian countries for shipping
       },
       billing_address_collection: "required", // Collect billing address information
-      success_url: "https://yatrav-1.vercel.app/",
-      cancel_url: " https://yatrav-1.vercel.app/cancel"
+      success_url: "http://localhost:5173",
+      cancel_url: "http://localhost:5173/cancel"
     });
 
     console.log("Session created:", session.id);
