@@ -35,7 +35,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
       },
       billing_address_collection: "required", // Collect billing address information
       success_url: "http://localhost:5173",
-      cancel_url: "http://localhost:5173/cancel"
+      cancel_url: " https://yatrav-1.vercel.app/cancel"
     });
 
     console.log("Session created:", session.id);
